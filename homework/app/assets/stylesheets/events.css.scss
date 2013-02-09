@@ -1,0 +1,19 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+
+html, body {
+	height: 100%;
+}
+
+#wrap {
+	min-height:100%;
+	height: auto !important;
+	height:100%;
+	margin: 0 auto -60px;
+}
+
+#push, #footer {
+	height:60px;
+}

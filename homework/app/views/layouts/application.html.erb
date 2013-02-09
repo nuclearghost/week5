@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meetup</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div id="wrap">
+<div class="navbar">
+	<div class="navbar-inner">
+		<%= link_to "Meetup", "/", :class=>"brand" %>
+		<ul class="nav">
+			<li id="nav-venue"><%= link_to "Venues", venues_url%></li>
+			<li id="nav-events"><%= link_to "Events", events_url%></li>
+		</ul>
+	</div>
+</div>
+<%= yield %>
+<div id="push"></div>
+</div>
+<div id="footer">
+	<div class="container">
+		&copy;2013 <%= link_to "Mark ", "http://twitter.com/nuclearghost" %><%= link_to "Meyer", "https://github.com/nuclearghost" %>
+		for <%=link_to "CSPP 52553", "http://www.cspp52553.com/" %>
+	</div>
+</div>
+</body>
+</html>
